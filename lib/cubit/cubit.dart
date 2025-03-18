@@ -16,7 +16,14 @@ class CubitFetchData extends Cubit<LoadDataState>{
         name: d["name"],
         image: d["image"],
           unreadedmessages: d["unreadedmessages"],
-          islatestmessagereaded: d["islatestmessagereaded"]));
+          islatestmessagereaded: d["islatestmessagereaded"],
+          calltype: d['calltype'],
+          iscall: d['iscall'],
+          lastactivity: d['lastactivity'],
+          lastcall: d['lastcall']
+          )
+          
+          );
     }
     emit(Loaded(newdata));
   }

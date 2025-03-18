@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 class Api{
-  static String BASE_URL="http://10.0.2.2:8000";
+  static String BASE_URL="https://then-gussi-karim2003-acc55ad1.koyeb.app";
   Future<List?> fetchdata() async{
     String url="$BASE_URL/api/?format=json";
     Uri uri=Uri.parse(url);

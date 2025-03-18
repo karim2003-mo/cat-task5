@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:task4/stdpixels/fontsizes.dart';
 import 'package:task4/stdpixels/stdpixel.dart';
+import 'package:task4/veiws/callsveiw.dart';
 import 'package:task4/veiws/chatveiw.dart';
 import 'package:task4/veiws/statusveiw.dart';
 void main() {
@@ -77,7 +78,7 @@ class MainApp extends StatelessWidget {
             Center(child: SelectableText("GROUP VEIW",style: GoogleFonts.poppins(fontSize: 26,fontWeight:FontWeight.w900 ),)),
             ChatVeiw(),
            StatusVeiw(),
-            Center(child: Text("Calls VEIW",style: GoogleFonts.poppins(fontSize: 26,fontWeight:FontWeight.w900 ),)),
+            CallVeiw()
           ])
         ),
       ),
