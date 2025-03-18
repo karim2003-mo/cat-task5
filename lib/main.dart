@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:task4/stdpixels/fontsizes.dart';
 import 'package:task4/stdpixels/stdpixel.dart';
 import 'package:task4/veiws/chatveiw.dart';
+import 'package:task4/veiws/statusveiw.dart';
 void main() {
   runApp( MainApp());
 }
@@ -75,7 +76,7 @@ class MainApp extends StatelessWidget {
           body:TabBarView(children:[
             Center(child: SelectableText("GROUP VEIW",style: GoogleFonts.poppins(fontSize: 26,fontWeight:FontWeight.w900 ),)),
             ChatVeiw(),
-            Center(child: Text("STATUS VEIW",style: GoogleFonts.poppins(fontSize: 26,fontWeight:FontWeight.w900 ),)),
+           StatusVeiw(),
             Center(child: Text("Calls VEIW",style: GoogleFonts.poppins(fontSize: 26,fontWeight:FontWeight.w900 ),)),
           ])
         ),

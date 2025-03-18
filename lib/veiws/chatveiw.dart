@@ -53,13 +53,18 @@ class _ChateVeiwState extends State<ChatVeiw> {
                               mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                                state.data[index].name,
-                                style: GoogleFonts.poppins(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w700,
+                    Container(
+                      width: 130*_pixel.horizontalpixel(),
+                      child: Text(
+                                  state.data[index].name,
+                                  style: GoogleFonts.poppins(
+                                    fontSize: FontSizes.fontsize(fontsize: FontSize.VerySmall, pixel: _pixel),
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                  overflow:TextOverflow.ellipsis ,
+                                  maxLines: 1,
                                 ),
-                              ),
+                    ),
                     Row(
                       children: [
                         (state.data[index].islatestmessagereaded)?Icon(Icons.done_all,color: Colors.lightBlue,):
@@ -70,7 +75,7 @@ class _ChateVeiwState extends State<ChatVeiw> {
                             
                                       state.data[index].latestmessage,
                                       style: GoogleFonts.poppins(
-                                        fontSize: 12,
+                                        fontSize: FontSizes.fontsize(fontsize: FontSize.Tiny, pixel: _pixel),
                                         fontWeight: FontWeight.w400,
                                       ),
                                       overflow: TextOverflow.ellipsis, // Adds dots when the text overflows.

@@ -4,6 +4,8 @@ class FontSizes {
   static double fontsize({required FontSize fontsize ,required Pixel pixel }){
     if(pixel.horizontalpixel()>=pixel.horizontalpixel()){
       switch(fontsize){
+      case FontSize.Tiny:
+      return 2*pixel.horizontalpixel()+4*pixel.verticalpixel();
       case FontSize.VerySmall:
       return 2*pixel.horizontalpixel()+6*pixel.verticalpixel();
       case FontSize.Small:
@@ -17,6 +19,8 @@ class FontSizes {
     }
     }else{
     switch(fontsize){
+      case FontSize.Tiny:
+      return 4*pixel.horizontalpixel()+2*pixel.verticalpixel();
       case FontSize.VerySmall:
       return 6*pixel.horizontalpixel()+2*pixel.verticalpixel();
       case FontSize.Small:
@@ -32,6 +36,7 @@ class FontSizes {
   }
 }
 enum FontSize{
+  Tiny,
   VerySmall,
   Small,
   Meduim,
